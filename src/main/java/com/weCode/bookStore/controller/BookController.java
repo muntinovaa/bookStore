@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api/v1/books")
 public class BookController {
 
-    @GetMapping  // http://localhost:8080/api/v1/books
+    @GetMapping //
     public ResponseEntity<List<BookDto>> getBooks(){
               BookDto book = BookDto
                       .builder()
@@ -21,6 +21,8 @@ public class BookController {
                       .build();
               List<BookDto> books = new ArrayList<>();
               books.add(book);
+
+
               return ResponseEntity.ok(books);
     }
 
