@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api/v1/books")
 public class BookController {
 
-    @GetMapping //
+    @GetMapping
     public ResponseEntity<List<BookDto>> getBooks(){
               BookDto book = BookDto
                       .builder()
