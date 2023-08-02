@@ -7,6 +7,7 @@ branches:
     - main
 deploy:
   provider: heroku
+  skip_cleanup: true
   api_key: $HEROKU_TOKEN
   app: "moontinova"
   on:
