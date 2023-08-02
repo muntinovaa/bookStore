@@ -1,8 +1,11 @@
 language: java
 jdk:
   - openjdk11
+sudo: true
 deploy:
   provider: heroku
   api_key:
     secure: $HEROKU_TOKEN
     app: "moontinova"
+  on:
+    branch: main
